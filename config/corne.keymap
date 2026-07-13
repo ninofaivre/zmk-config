@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-{
+/ {
         behaviors {
-                Layer-Tap-Hold-Preferred: Layer-Tap-Hold-Preferred {
+                layer-Tap-Hold-Preferred: layer-Tap-Hold-Preferred {
                     compatible = "zmk,behavior-hold-tap";                    
                     flavor = "hold-preferred"; 
                     
