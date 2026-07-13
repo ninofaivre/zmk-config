@@ -12,13 +12,11 @@
 / {
         behaviors {
                 // On crée notre comportement de Mod-Tap intelligent
-                layer_tap_repeat: layer_tap_repeat_behavior {
-                    compatible = "zmk,behavior-hold-tap";
-                    #binding-cells = <2>;
+                Layer-Tap-Hold-Preferred: Layer-Tap-Hold-Preferred {
+                    compatible = "zmk,behavior-hold-tap";                    
+                    flavor = "hold-preferred"; 
                     
-                    flavor = "tap-unless-interrupted"; 
-                    
-                    tapping-term-ms = <100>; 
+                    tapping-term-ms = <120>; 
                     
                     bindings = <&mo>, <&kp>;
                 };
