@@ -11,7 +11,7 @@
 
 / {
         behaviors {
-                layer-Tap-Hold-Preferred: layer-Tap-Hold-Preferred {
+                layer_tap_hold_preferred: layer-tap-hold-preferred {
                     compatible = "zmk,behavior-hold-tap";                    
                     flavor = "hold-preferred"; 
                     
