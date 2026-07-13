@@ -54,4 +54,44 @@
                         >;
                 };
         };
+
+                extra_layer1 {
+                        bindings = <
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                 &trans &trans &trans &trans &trans &trans
+                        >;
+                };
+        };
+
+                extra_layer2 {
+                        bindings = <
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                 &trans &trans &trans &trans &trans &trans
+                        >;
+                };
+        };
+
+                extra_layer3 {
+                        bindings = <
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                 &trans &trans &trans &trans &trans &trans
+                        >;
+                };
+        };
+
+                extra_layer4 {
+                        bindings = <
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                 &trans &trans &trans &trans &trans &trans
+                        >;
+                };
+        };
 };
