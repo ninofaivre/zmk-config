@@ -24,6 +24,14 @@
                         , <&macro_param_2to1 &macro_release &kp MACRO_PLACEHOLDER> 
                         ;
                 };
+                socd: socd {
+                    compatible = "zmk,behavior-macro-one-param";
+                    #binding-cells = <1>;
+                    bindings
+                        = <&macro_param_1to1>
+                        , <&socd_core MACRO_PLACEHOLDER>
+                        ;
+                };
         };
 
         behaviors {
@@ -41,7 +49,7 @@
                         tapping-term-ms = <250>; 
                         bindings = <&kp>, <&kp>;
                 };
-                socd: socd {
+                socd_core: socd_core {
                         compatible = "zmk,behavior-socd";
                         #binding-cells = <1>;
                         bindings = <&kp>;
