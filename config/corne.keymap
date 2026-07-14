@@ -31,19 +31,20 @@
                         compatible = "zmk,behavior-hold-tap";                     
                         #binding-cells = <2>;
                         flavor = "tap-unless-interrupted"; 
-                        
                         tapping-term-ms = <250>; 
-                        
                         bindings = <&mo>, <&kp>;
                 };
                 mod_tap_hold_preferred: mod-tap-hold-preferred {
                         compatible = "zmk,behavior-hold-tap";                     
                         #binding-cells = <2>;
                         flavor = "tap-unless-interrupted"; 
-                        
                         tapping-term-ms = <250>; 
-                        
                         bindings = <&kp>, <&kp>;
+                };
+                socd: socd {
+                        compatible = "zmk,behavior-socd";
+                        #binding-cells = <1>;
+                        bindings = <&kp>;
                 };
         };
 
