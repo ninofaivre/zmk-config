@@ -1,15 +1,20 @@
 manifest:
   defaults:
-    revision: v0.3
+    revision: &zmk-rev v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: urob
+      url-base: https://github.com/urob
     - name: nguyendown
       url-base: https://github.com/nguyendown
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: zmk-helpers
+      remote: urob
+      revision: *zmk-rev
     - name: zmk-behavior-socd
       remote: nguyendown
       revision: main
