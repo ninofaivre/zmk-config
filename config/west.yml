@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: joelspadin
+      url-base: https://github.com/joelspadin
     - name: nguyendown
       url-base: https://github.com/nguyendown
   projects:
@@ -15,6 +17,9 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: *zmk-rev
+    - name: zmk-locales
+      remote: joelspadin
+      revision: v1.1
     - name: zmk-behavior-socd
       remote: nguyendown
       revision: main
