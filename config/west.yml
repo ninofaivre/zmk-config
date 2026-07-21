@@ -19,7 +19,7 @@ manifest:
       revision: *zmk-rev
     - name: zmk-locales
       remote: joelspadin
-      revision: v1.1
+      revision: v1.1.0
     - name: zmk-behavior-socd
       remote: nguyendown
       revision: main
