@@ -56,10 +56,10 @@
                         #binding-cells = <1>;
                         bindings = <&kp>;
                 };
-                SHIFT_MORPH_CAPSLOCK(e_aigue, LBKT)
-                SHIFT_MORPH_CAPSLOCK(e_grave, SINGLE_QUOTE)
-                SHIFT_MORPH_CAPSLOCK(a_grave, GRAVE)
-                SHIFT_MORPH_CAPSLOCK(c_cedille, SEMI)
+                SHIFT_MORPH_CAPSLOCK(e_aigue, N2)
+                SHIFT_MORPH_CAPSLOCK(e_grave, N7)
+                SHIFT_MORPH_CAPSLOCK(a_grave, N0)
+                SHIFT_MORPH_CAPSLOCK(c_cedille, N9)
         };
 
         keymap {
