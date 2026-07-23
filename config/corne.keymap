@@ -23,6 +23,13 @@
         };
 
         behaviors {
+                shift_morph: shift-morph {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <2>;
+                        bindings = <&kp>, <&kp>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                        keep-mods = <(MOD_RSFT)>;
+                };
                 layer_tap_hold: layer-tap-hold {
                         compatible = "zmk,behavior-hold-tap";                     
                         #binding-cells = <2>;
