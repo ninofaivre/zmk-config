@@ -20,16 +20,23 @@
                         #binding-cells = <2>;
                         bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
                 };
+                caps_one_key_press: caps_one_key_press {
+                        compatible = "zmk,behavior-macro-one-param";
+                        #binding-cells = <1>;
+                        bindings = <&kp CAPS &macro_param_1to1 &kp MACRO_PLACEHOLDER &kp CAPS>;
+                };
         };
 
-        behaviors {
-                shift_morph: shift-morph {
-                        compatible = "zmk,behavior-mod-morph";
-                        #binding-cells = <2>;
-                        bindings = <&kp>, <&kp>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                        keep-mods = <(MOD_RSFT)>;
+
+        #define SHIFT_MORPH_CAPSLOCK(NAME, KEY) \
+                NAME: NAME { \
+                        compatible = "zmk,behavior-mod-morph"; \
+                        #binding-cells = <0>; \
+                        bindings = <&kp KEY>, <&caps_one_key_press KEY>; \
+                        mods = <(MOD_LSFT|MOD_RSFT)>; \
                 };
+
+        behaviors {
                 layer_tap_hold: layer-tap-hold {
                         compatible = "zmk,behavior-hold-tap";                     
                         #binding-cells = <2>;
@@ -49,6 +56,10 @@
                         #binding-cells = <1>;
                         bindings = <&kp>;
                 };
+                SHIFT_MORPH_CAPSLOCK(e_aigue, LBKT)
+                SHIFT_MORPH_CAPSLOCK(e_grave, SINGLE_QUOTE)
+                SHIFT_MORPH_CAPSLOCK(a_grave, GRAVE)
+                SHIFT_MORPH_CAPSLOCK(c_cedille, SEMI)
         };
 
         keymap {
