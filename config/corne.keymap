@@ -74,7 +74,7 @@
                 SHIFT_MORPH_CAPSLOCK(e_grave, N7)
                 SHIFT_MORPH_CAPSLOCK(a_grave, N0)
                 SHIFT_MORPH_CAPSLOCK(c_cedille, N9)
-                SHIFT_MORPH_SHIFT_2KEY(a_circ, LBRC, A)
+                SHIFT_MORPH_SHIFT_2KEY(a_circ, LBRC, Q)
                 SHIFT_MORPH_SHIFT_2KEY(e_circ, LBRC, E)
                 SHIFT_MORPH_SHIFT_2KEY(i_circ, LBRC, I)
                 SHIFT_MORPH_SHIFT_2KEY(o_circ, LBRC, O)
