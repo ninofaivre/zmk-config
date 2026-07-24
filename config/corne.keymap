@@ -20,10 +20,10 @@
                         #binding-cells = <2>;
                         bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
                 };
-                two_key_press_shift_second: two-key-press-shift-second {
+                two_key_press_caps_second: two-key-press-caps-second {
                         compatible = "zmk,behavior-macro-two-param";
                         #binding-cells = <2>;
-                        bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_press &kp LSHFT &macro_param_2to1 &kp MACRO_PLACEHOLDER &macro_release &kp LSHFT>;
+                        bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp CAPS &macro_param_2to1 &kp MACRO_PLACEHOLDER &kp CAPS>;
                 };
                 caps_one_key_press: caps_one_key_press {
                         compatible = "zmk,behavior-macro-one-param";
@@ -45,7 +45,7 @@
                 NAME: NAME { \
                         compatible = "zmk,behavior-mod-morph"; \
                         #binding-cells = <0>; \
-                        bindings = <&two_key_press KEY1 KEY2>, <&two_key_press_shift_second KEY1 KEY2>; \
+                        bindings = <&two_key_press KEY1 KEY2>, <&two_key_press_caps_second KEY1 KEY2>; \
                         mods = <(MOD_LSFT|MOD_RSFT)>; \
                         keep-mods = <0>; \
                 };
