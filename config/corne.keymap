@@ -42,6 +42,7 @@
                         #binding-cells = <0>; \
                         bindings = <&two_key_press KEY1 KEY2>, <&two_key_press KEY1 LS(KEY2)>; \
                         mods = <(MOD_LSFT|MOD_RSFT)>; \
+                        keep-mods = <0>; \
                 };
 
         behaviors {
