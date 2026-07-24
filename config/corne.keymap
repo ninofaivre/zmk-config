@@ -34,6 +34,14 @@
                         #binding-cells = <0>; \
                         bindings = <&kp KEY>, <&caps_one_key_press KEY>; \
                         mods = <(MOD_LSFT|MOD_RSFT)>; \
+                        masked-mods = <(MOD_LSFT|MOD_RSFT)>; \
+                };
+        #define SHIFT_MORPH_SHIFT_2KEY(NAME, KEY1, KEY2) \
+                NAME: NAME { \
+                        compatible = "zmk,behavior-mod-morph"; \
+                        #binding-cells = <0>; \
+                        bindings = <&two_key_press KEY1 KEY2>, <&two_key_press KEY1 LS(KEY2)>; \
+                        mods = <(MOD_LSFT|MOD_RSFT)>; \
                 };
 
         behaviors {
@@ -60,6 +68,11 @@
                 SHIFT_MORPH_CAPSLOCK(e_grave, N7)
                 SHIFT_MORPH_CAPSLOCK(a_grave, N0)
                 SHIFT_MORPH_CAPSLOCK(c_cedille, N9)
+                SHIFT_MORPH_SHIFT_2KEY(a_circ, LBRC, A)
+                SHIFT_MORPH_SHIFT_2KEY(e_circ, LBRC, E)
+                SHIFT_MORPH_SHIFT_2KEY(i_circ, LBRC, I)
+                SHIFT_MORPH_SHIFT_2KEY(o_circ, LBRC, O)
+                SHIFT_MORPH_SHIFT_2KEY(u_circ, LBRC, U)
         };
 
         keymap {
