@@ -74,11 +74,11 @@
                 SHIFT_MORPH_CAPSLOCK(e_grave, N7)
                 SHIFT_MORPH_CAPSLOCK(a_grave, N0)
                 SHIFT_MORPH_CAPSLOCK(c_cedille, N9)
-                SHIFT_MORPH_SHIFT_2KEY(a_circ, LBRC, Q)
-                SHIFT_MORPH_SHIFT_2KEY(e_circ, LBRC, E)
-                SHIFT_MORPH_SHIFT_2KEY(i_circ, LBRC, I)
-                SHIFT_MORPH_SHIFT_2KEY(o_circ, LBRC, O)
-                SHIFT_MORPH_SHIFT_2KEY(u_circ, LBRC, U)
+                SHIFT_MORPH_SHIFT_2KEY(a_circ, FR_CIRC, Q)
+                SHIFT_MORPH_SHIFT_2KEY(e_circ, FR_CIRC, E)
+                SHIFT_MORPH_SHIFT_2KEY(i_circ, FR_CIRC, I)
+                SHIFT_MORPH_SHIFT_2KEY(o_circ, FR_CIRC, O)
+                SHIFT_MORPH_SHIFT_2KEY(u_circ, FR_CIRC, U)
         };
 
         keymap {
