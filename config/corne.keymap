@@ -34,7 +34,7 @@
                         #binding-cells = <0>; \
                         bindings = <&kp KEY>, <&caps_one_key_press KEY>; \
                         mods = <(MOD_LSFT|MOD_RSFT)>; \
-                        masked-mods = <(MOD_LSFT|MOD_RSFT)>; \
+                        keep-mods = <0>; \
                 };
         #define SHIFT_MORPH_SHIFT_2KEY(NAME, KEY1, KEY2) \
                 NAME: NAME { \
